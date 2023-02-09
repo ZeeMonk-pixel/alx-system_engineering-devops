@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -A | awk '{print $1}' | sort -t. -k1.1,1nr -k2 | awk 'BEGIN{ORS=","} /^[0-9]/{print;next} /^[^.]/{print} END{print "\n"}'
