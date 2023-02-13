@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -lt --time-style=+"%Y-%m-%d %H:%M:%S" | head -n 11 | tail -n 10
