@@ -1,2 +1,2 @@
 #!/bin/bash
-
+seq 50 | grep -n '' | grep -E ':1$' | cut -d: -f2
